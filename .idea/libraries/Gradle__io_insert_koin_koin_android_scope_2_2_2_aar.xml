@@ -1,0 +1,26 @@
+<component name="libraryTable">
+  <library name="Gradle: io.insert-koin:koin-android-scope:2.2.2@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/6c3dc361fef77d68c5ae2f4375f5323b/jetified-koin-android-scope-2.2.2/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/6c3dc361fef77d68c5ae2f4375f5323b/jetified-koin-android-scope-2.2.2/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/6c3dc361fef77d68c5ae2f4375f5323b/jetified-koin-android-scope-2.2.2/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/dd1b2b1aaea807d6b4f5afb4fcdc0d77/jetified-koin-android-scope-2.2.2/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/dd1b2b1aaea807d6b4f5afb4fcdc0d77/jetified-koin-android-scope-2.2.2/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/dd1b2b1aaea807d6b4f5afb4fcdc0d77/jetified-koin-android-scope-2.2.2/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ef6464814d59a93f2f1de18f7e4662dd/jetified-koin-android-scope-2.2.2/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ef6464814d59a93f2f1de18f7e4662dd/jetified-koin-android-scope-2.2.2/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ef6464814d59a93f2f1de18f7e4662dd/jetified-koin-android-scope-2.2.2/jars/classes.jar!/" />
+      <root url="file://$APPLICATION_HOME_DIR$/caches/transforms-2/files-2.1/f9dbced9be019fb735a6ae6e1c658d06/jetified-koin-android-scope-2.2.2/res" />
+      <root url="jar://$APPLICATION_HOME_DIR$/caches/transforms-2/files-2.1/f9dbced9be019fb735a6ae6e1c658d06/jetified-koin-android-scope-2.2.2/jars/classes.jar!/" />
+      <root url="file://$APPLICATION_HOME_DIR$/caches/transforms-2/files-2.1/f9dbced9be019fb735a6ae6e1c658d06/jetified-koin-android-scope-2.2.2/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.insert-koin/koin-android-scope/2.2.2/8cee71bfbca021a02d22ba42b8c411feb82ad54e/koin-android-scope-2.2.2-javadoc.jar!/" />
+      <root url="jar://$APPLICATION_HOME_DIR$/caches/modules-2/files-2.1/io.insert-koin/koin-android-scope/2.2.2/8cee71bfbca021a02d22ba42b8c411feb82ad54e/koin-android-scope-2.2.2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.insert-koin/koin-android-scope/2.2.2/30b7fd16c9909fc227e42474428d5b78247f3e3c/koin-android-scope-2.2.2-sources.jar!/" />
+      <root url="jar://$APPLICATION_HOME_DIR$/caches/modules-2/files-2.1/io.insert-koin/koin-android-scope/2.2.2/30b7fd16c9909fc227e42474428d5b78247f3e3c/koin-android-scope-2.2.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

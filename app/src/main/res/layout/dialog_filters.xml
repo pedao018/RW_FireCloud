@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:id="@+id/filters_form"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:orientation="vertical"
+  android:padding="16dp">
+
+  <TextView
+    style="@style/AppTheme.Title"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    android:text="@string/header_filters" />
+
+  <!-- Author -->
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+      android:id="@+id/icon_author"
+      style="@style/AppTheme.FilterIcon"
+      android:layout_gravity="center_vertical"
+      app:srcCompat="@drawable/ic_outline_author_24"
+      app:tint="@color/greySecondary" />
+
+    <Spinner
+      android:id="@+id/spinner_author"
+      style="@style/AppTheme.FilterSpinner"
+      android:entries="@array/authors" />
+  </LinearLayout>
+
+  <!-- Category -->
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+      android:id="@+id/icon_category"
+      style="@style/AppTheme.FilterIcon"
+      android:layout_gravity="center_vertical"
+      app:srcCompat="@drawable/ic_outline_category_24"
+      app:tint="@color/greySecondary" />
+
+    <Spinner
+      android:id="@+id/spinner_category"
+      style="@style/AppTheme.FilterSpinner"
+      android:entries="@array/categories" />
+  </LinearLayout>
+
+  <!--  Sort by  -->
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+      android:id="@+id/icon_sort"
+      style="@style/AppTheme.FilterIcon"
+      android:layout_gravity="center_vertical"
+      app:srcCompat="@drawable/ic_sort_white_24px"
+      app:tint="@color/greySecondary" />
+
+    <Spinner
+      android:id="@+id/spinner_sort"
+      style="@style/AppTheme.FilterSpinner"
+      android:entries="@array/sort_by" />
+  </LinearLayout>
+
+  <!-- Cancel and Apply buttons -->
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <Button
+      android:id="@+id/button_cancel"
+      style="@style/Base.Widget.AppCompat.Button.Borderless"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:text="@string/cancel"
+      android:textColor="@color/greySecondary" />
+
+    <Button
+      android:id="@+id/button_apply"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:text="@string/apply"
+      android:theme="@style/ThemeOverlay.PositiveButton" />
+  </LinearLayout>
+</LinearLayout>
+

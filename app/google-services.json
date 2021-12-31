@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "895368947833",
+    "project_id": "bookshelf-5fb31",
+    "storage_bucket": "bookshelf-5fb31.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:895368947833:android:6e06c3673f3f15bfc5cca8",
+        "android_client_info": {
+          "package_name": "com.raywenderlich.android.bookshelf"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "895368947833-vm8roe6hv2nd85a6oo3fv43n1r31hlv4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.raywenderlich.android.bookshelf",
+            "certificate_hash": "cda78e772b8d43b431f6cc239e758599e0b18cac"
+          }
+        },
+        {
+          "client_id": "895368947833-voonneitk59vkim8phrnm4fpjth0okth.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAaw4sFslenky9qDp1zJiY9h5P7Y72PBQM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "895368947833-voonneitk59vkim8phrnm4fpjth0okth.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

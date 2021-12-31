@@ -1,0 +1,81 @@
+<resources>
+  <string name="app_name">Bookshelf</string>
+
+  <string name="cancel">Cancel</string>
+  <string name="apply">Apply</string>
+  <string name="update">Update</string>
+  <string name="divider_bullet">•</string>
+
+  <string name="add_books">Add Books</string>
+
+  <string name="no_book_results">Oops, couldn\'t find any results\nthat matched your filter</string>
+
+  <string name="all_books">All books</string>
+  <string name="value_any_author">Any Author</string>
+  <string name="value_any_category">Any Category</string>
+
+  <string name="header_update_book">Update Book</string>
+
+  <string name="header_filters">Filter</string>
+
+  <string name="sort_by_rating">Sort by Rating</string>
+  <string name="sort_by_year">Sort by Year</string>
+  <string name="sort_alphabetically">Sort Alphabetically</string>
+  <string name="sorted_by_rating">sorted by rating</string>
+  <string name="sorted_by_year">sorted by year</string>
+  <string name="sorted_alphabetically">sorted alphabetically</string>
+
+  <string-array name="authors">
+    <item>@string/value_any_author</item>
+
+    <item>Albert Camus</item>
+    <item>Aldous Huxley</item>
+    <item>Anonymous</item>
+    <item>Brian Kernighan</item>
+    <item>Carola Lovering</item>
+    <item>Chuck Palahniuk</item>
+    <item>Dale Carnegie</item>
+    <item>David Kushner</item>
+    <item>Dennis Ritchie</item>
+    <item>Douglas Crockford</item>
+    <item>Eric Freeman</item>
+    <item>F. Scott FitzGerald</item>
+    <item>Frederich Nietzsche</item>
+    <item>Fyodor Dostoevsky</item>
+    <item>George Orwell</item>
+    <item>Ivan Turgenev</item>
+    <item>Joanne Tompkins</item>
+    <item>Joshua Bloch</item>
+    <item>Khalil Gebran</item>
+    <item>May Cobb</item>
+    <item>Napoleon Hill</item>
+    <item>Niccolo Machiavelli</item>
+    <item>Patrick Keefe</item>
+    <item>Paul Graham</item>
+    <item>Paulo Coelho</item>
+    <item>Robert Martin</item>
+    <item>Samuel Beckett</item>
+    <item>Steve McConnell</item>
+    <item>Steven Levy</item>
+  </string-array>
+
+  <string-array name="categories">
+    <item>@string/value_any_category</item>
+
+    <item>Business</item>
+    <item>Classics</item>
+    <item>Computer Science</item>
+    <item>Fiction</item>
+    <item>Nonfiction</item>
+    <item>Philosophy</item>
+    <item>Plays</item>
+    <item>Poetry</item>
+    <item>Thriller</item>
+  </string-array>
+
+  <string-array name="sort_by">
+    <item>@string/sort_by_rating</item>
+    <item>@string/sort_by_year</item>
+    <item>@string/sort_alphabetically</item>
+  </string-array>
+</resources>
