@@ -49,12 +49,23 @@ class MainViewModel(private val fireStore: FirebaseFirestore) : ViewModel() {
 
   var query: Query? = null
 
+  val books: CollectionReference = fireStore.collection(MainActivity.BOOKS_COLLECTION)
+
+  val prevBooks = mutableListOf<Book>()
+
   init {
     // TODO: Create the Query for accessing data
   }
 
   fun addBooksClicked() {
-    // TODO: Implement Add Books
+    var book: Book
+    for (i in 0..15) {
+      book = BookUtil().getRandom()
+      if (!prevBooks.contains(book)) {
+        books.add(book)
+      }
+      prevBooks.add(book)
+    }
   }
 
   fun updateBook(document: DocumentSnapshot, newTitle: String) {
