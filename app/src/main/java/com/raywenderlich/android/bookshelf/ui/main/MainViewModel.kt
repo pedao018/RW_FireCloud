@@ -54,7 +54,9 @@ class MainViewModel(private val fireStore: FirebaseFirestore) : ViewModel() {
   val prevBooks = mutableListOf<Book>()
 
   init {
-    // TODO: Create the Query for accessing data
+    query = fireStore.collection(MainActivity.BOOKS_COLLECTION)
+      .orderBy(Book.FIELD_RATING, Query.Direction.DESCENDING)
+      .limit(MainActivity.BOOK_QUERY_LIMIT)
   }
 
   fun addBooksClicked() {
