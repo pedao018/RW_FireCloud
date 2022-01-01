@@ -68,11 +68,13 @@ abstract class FirestoreAdapter<VH : RecyclerView.ViewHolder?>(
           onDocumentAdded(change)
         }
         DocumentChange.Type.MODIFIED -> {
-          Log.e("DocumentChange", "Document Modified!")
+          //Log.e("DocumentChange", "Document Modified!")
+          onDocumentModified(change)
         }
 
         DocumentChange.Type.REMOVED -> {
-          Log.e("DocumentChange", "Document Removed!")
+          //Log.e("DocumentChange", "Document Removed!")
+          onDocumentRemoved(change)
         }
       }
     }
@@ -102,11 +104,21 @@ abstract class FirestoreAdapter<VH : RecyclerView.ViewHolder?>(
   }
 
   private fun onDocumentModified(change: DocumentChange) {
-    // TODO: Implement onDocumentModified
+    if (change.oldIndex == change.newIndex) {
+      //Item changed but remained in the same position
+      snapshots[change.oldIndex] = change.document
+      notifyItemChanged(change.oldIndex)
+    } else {
+      //Item changed and has changed position
+      snapshots.removeAt(change.oldIndex)
+      snapshots.add(change.newIndex, change.document)
+      notifyItemMoved(change.oldIndex, change.newIndex)
+    }
   }
 
   private fun onDocumentRemoved(change: DocumentChange) {
-    // TODO: Implement onDocumentRemoved
+    snapshots.removeAt(change.oldIndex)
+    notifyItemRemoved(change.oldIndex)
   }
 
   fun startListening() {

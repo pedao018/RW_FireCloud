@@ -16,6 +16,9 @@ class SwipeToDeleteCallback(
   ): Boolean = false
 
   override fun onSwiped(viewHolder: RecyclerView.ViewHolder, direction: Int) {
-    // TODO: Implement onSwiped
+    FirebaseFirestore.getInstance()
+      .collection(MainActivity.BOOKS_COLLECTION)
+      .document(adapter.getSnapshot(viewHolder.bindingAdapterPosition).id)
+      .delete()
   }
 }

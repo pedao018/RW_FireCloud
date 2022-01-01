@@ -71,7 +71,9 @@ class MainViewModel(private val fireStore: FirebaseFirestore) : ViewModel() {
   }
 
   fun updateBook(document: DocumentSnapshot, newTitle: String) {
-    // TODO: Implement Update Book
+    fireStore.collection(MainActivity.BOOKS_COLLECTION)
+      .document(document.id)
+      .update(Book.FIELD_TITLE, newTitle)
   }
 
   fun prepareQuery(filters: Filters) {
