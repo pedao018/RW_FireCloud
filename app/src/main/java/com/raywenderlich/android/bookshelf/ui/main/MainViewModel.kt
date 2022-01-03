@@ -77,6 +77,21 @@ class MainViewModel(private val fireStore: FirebaseFirestore) : ViewModel() {
   }
 
   fun prepareQuery(filters: Filters) {
-    // TODO: Implement how the query is constructed
+    var query: Query = fireStore.collection(MainActivity.BOOKS_COLLECTION)
+
+    if (filters.category != null) {
+      query = query.whereEqualTo(Book.FIELD_CATEGORY, filters.category)
+    }
+
+    if (filters.author != null) {
+      query = query.whereEqualTo(Book.FIELD_AUTHOR, filters.author)
+    }
+
+    if (filters.sortBy != null && filters.sortDirection != null) {
+      query = query.orderBy(filters.sortBy, filters.sortDirection)
+    }
+
+    this.query = query.limit(MainActivity.BOOK_QUERY_LIMIT)
+    this.filters = filters
   }
 }
